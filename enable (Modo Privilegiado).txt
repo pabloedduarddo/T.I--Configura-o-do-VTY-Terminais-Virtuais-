@@ -1,0 +1,10 @@
+enable (Modo Privilegiado)
+  configure terminal (Modo de Configuração Global)
+      hostname sw-01 (Nome do Switch)
+      enable secret 123@senac (Senha Modo Privilegiado)
+      username senac secret (Usuário e Senha de Admin.)
+      line console 0 (Configuração de linha do Console)
+      login local
+        exit (Sair dos campos de Configuração)
+      exit  
+    Copy running-config startup-config (Salvando as Configuração)

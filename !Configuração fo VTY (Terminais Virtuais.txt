@@ -1,0 +1,15 @@
+!Configuração fo VTY (Terminais Virtuais)
+enable
+     configure terminal
+
+     !Habilitando as linhas Virtuais
+     line vty 0 4 
+      login local
+      logging synchronous
+      exec-timeout 5 30
+
+    !Habilitando o suporte aos Protocolos
+    transport input all
+    end  
+
+write (ele salva, mais rapido)
